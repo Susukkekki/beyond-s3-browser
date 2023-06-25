@@ -1,0 +1,30 @@
+{
+  "name": "beyond-s3-browser",
+  "version": "0.1.0",
+  "description": "Yet another browser for not only S3 but also compatible object storages",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Susukkekki/beyond-s3-browser.git"
+  },
+  "keywords": [
+    "s3"
+  ],
+  "author": "sskkekki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Susukkekki/beyond-s3-browser/issues"
+  },
+  "homepage": "https://github.com/Susukkekki/beyond-s3-browser#readme",
+  "devDependencies": {
+    "electron": "^25.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.5"
+  }
+}

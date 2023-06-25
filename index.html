@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>Beyond S3 Browser</title>
+    <!-- <script>let $ = require('jquery');</script> -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- <script>require('bootstrap');</script> -->
+    <style>
+        .table-hover tbody tr:hover > td {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <input type="checkbox" value="">
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Last Modified</th>
+                <th scope="col">Size</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <input type="checkbox" value="">
+                </td>
+                <td><img src="node_modules/bootstrap-icons/icons/folder.svg">
+                    <font color='#3b78ff'>data-00</font></td>
+                <td></td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <input type="checkbox" value="">
+                </td>
+                <td>
+                    <img src="node_modules/bootstrap-icons/icons/file-image.svg"> test-00.png</td>
+                <td>Today, 21:13</td>
+                <td>2.7 MiB</td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <input type="checkbox" value="">
+                </td>
+                <td><img src="node_modules/bootstrap-icons/icons/file-image.svg"> test-00.png</td>
+                <td>Yesterday, 09:42</td>
+                <td>2.1 MiB</td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <input type="checkbox" value="">
+                </td>
+                <td><img src="node_modules/bootstrap-icons/icons/file-earmark.svg"> test-00.png</td>
+                <td>Yesterday, 09:42</td>
+                <td>2.1 MiB</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./renderer.js"></script>
+
+</html>
