@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>Beyond S3 Browser</title>
+    <!-- <script>let $ = require('jquery');</script> -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- <script>require('bootstrap');</script> -->
+    <!-- <style>
+        .table-hover tbody tr:hover > td {
+            cursor: pointer;
+        }
+    </style> -->
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Created At</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <img src="node_modules/bootstrap-icons/icons/trash2-fill.svg"> test-1
+                </td>
+                <td>
+                    2023-06-27T08:20:03.793Z
+                </td>                
+            </tr>
+            <tr>
+                <td scope="row">
+                    <img src="node_modules/bootstrap-icons/icons/trash2-fill.svg"> test-2
+                </td>
+                <td>
+                    2023-06-27T09:55:20.060Z
+                </td>                
+            </tr>            
+        </tbody>
+    </table>
+</body>
+<script src="./renderer.js"></script>
+
+</html>
